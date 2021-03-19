@@ -1,0 +1,160 @@
+*, *::before, *:after {
+  box-sizing: border-box;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+.hero-banner {
+  position: relative;
+}
+/* .ptooltip-1 {
+  top: calc(55% - 125px) !important;
+  left: calc(57% - 125px) !important;
+}
+.ptooltip-2 {
+  top: calc(36% - 125px) !important;
+  left: calc(67.5% - 125px) !important;
+}
+.ptooltip-3 {
+  top: calc(52% - 125px) !important;
+  left: calc(71% - 125px) !important;
+}
+.ptooltip-4 {
+  top: calc(28% - 125px) !important;
+  left: calc(83.75% - 125px) !important;
+}
+.ptooltip-5 {
+  top: calc(64% - 125px) !important;
+  left: calc(90% - 125px) !important;
+} */
+.ptooltip-1 {
+  top: calc(58% - 125px) !important;
+  left: calc(51% - 125px) !important;
+}
+.ptooltip-2 {
+  top: calc(36% - 125px) !important;
+  left: calc(62% - 125px) !important;
+}
+.ptooltip-3 {
+  top: calc(52% - 125px) !important;
+  left: calc(65% - 125px) !important;
+}
+.ptooltip-4 {
+  top: calc(33% - 125px) !important;
+  left: calc(78% - 125px) !important;
+}
+.ptooltip-5 {
+    top: calc(73% - 125px) !important;
+    left: calc(84% - 125px) !important;
+}
+.product-overlay .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    height: 0;
+}
+.product-overlay .tooltip .tooltiptext.top {
+  position: relative;
+  transform: translate(0, 40px);
+  margin-bottom: 0;
+  transition: all 0.5s !important;
+  margin-bottom: 0;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.product-overlay .tooltiptext {
+  width: 250px;
+  margin-left: 0;
+  transform: translate(-44%, -15px);
+  cursor: auto;
+  padding: 24px 20px;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  width: 210px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  color: #4a4a4a;
+  font-size: 0.75em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 20px;
+  margin-left: -105px;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: all 0.25s !important;
+  transition: all 0.25s !important;
+}
+.product-overlay .tooltip > .tooltip-pointer {
+  position: absolute;
+  left: 50%;
+  display: table;
+  transform: translateX(-50%);
+  transition: none !important;
+  padding-top: 20px;
+  cursor: default;
+  z-index: 2;
+}
+.product-overlay .tooltip > .tooltip-pointer {
+  display: inline-block;
+}
+.product-overlay .tooltip .plus-icon {
+    background-color: rgba(255,255,255,0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0;
+    position: relative;
+    cursor: pointer;
+}
+.product-overlay .tooltip .plus-icon:before, .product-overlay .tooltip .plus-icon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin: auto;
+  background: #4a4a4a;
+}
+.product-overlay .tooltip .plus-icon:before {
+  width: 12px;
+  height: 2px;
+}
+.product-overlay .tooltip .plus-icon:after {
+  width: 2px;
+  height: 12px;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  border-width: 10px;
+  border-style: solid;
+}
+.tooltip .tooltiptext.top::after {
+  top: 100%;
+  margin-left: -10px;
+  border-color: #FFF transparent transparent transparent;
+}
+.product-overlay .tooltiptext {
+  width: 250px;
+  margin-left: 0;
+  transform: translate(-44%, -15px);
+  cursor: auto;
+  padding: 24px 20px;
+}
+.product-overlay .tooltip:hover .tooltiptext {
+  transform: translate(0, 0);
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
